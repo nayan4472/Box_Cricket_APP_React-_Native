@@ -1,55 +1,106 @@
-<<<<<<< HEAD
-# Welcome to your Expo app 👋
+# 🏏 Box Cricket App (React Native)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern React Native mobile application for instant turf booking, allowing users to quickly reserve box cricket grounds based on real-time availability.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
 
-   ```bash
-   npm install
-   ```
+* 🔐 User Authentication (Login / Signup)
+* 📍 Browse available box cricket turfs
+* ⏰ Real-time slot availability
+* 📅 Instant booking system
+* 💳 Stripe payment integration
+* 📱 Clean and responsive UI
 
-2. Start the app
+---
 
-   ```bash
-    npx expo start
-   ```
+## 🛠️ Tech Stack
 
-In the output, you'll find options to open the app in a
+* React Native (Expo)
+* Node.js & Express
+* MongoDB
+* Stripe API
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📁 Project Structure
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+├── app                # Main app screens (Expo Router)
+├── assets             # Images & static files
+├── backend
+│   ├── models         # Database models
+│   ├── routes         # API routes
+│   ├── index.js       # Backend entry point
+│   ├── .env           # Environment variables
+│   ├── package.json
+│
+├── components         # Reusable UI components
+├── constants          # Static data/constants
+├── hooks              # Custom hooks
+├── scripts            # Utility scripts
+├── app.json           # Expo config
+├── package.json       # Frontend dependencies
+├── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 📦 Installation
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+git clone https://github.com/nayan4472/Box_Cricket_APP_React-_Native.git
+cd Box_Cricket_APP_React-_Native
+npm install
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## ▶️ Run Frontend (Expo)
 
-Join our community of developers creating universal apps.
+```bash
+npx expo start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-=======
-# Box_Cricket_APP-React-_Native-
-A modern React Native mobile app for instant turf booking, allowing users to quickly reserve box cricket grounds based on real-time availability.
->>>>>>> cc3000ec61851708512c1081e273937f2022e768
+---
+
+## ▶️ Run Backend
+
+```bash
+cd backend
+npm install
+node index.js
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create `.env` file inside **backend** folder:
+
+```
+STRIPE_SECRET_KEY=your_secret_key_here
+```
+
+⚠️ Never expose your secret keys.
+
+---
+
+## ⚠️ Important Notes
+
+* `.env` file should be added in `.gitignore`
+* Do not push API keys to GitHub
+* Make sure backend is running before booking/payment
+
+---
+
+## 👨‍💻 Author
+
+**Nayan Pitroda**
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
